@@ -1,0 +1,144 @@
+﻿@model IEnumerable<BaiTap.Models.cau_hoi_09>
+
+@{
+    ViewBag.Title = "ShowProduct_9";
+    var CountProducts = ViewBag.CountProducts;
+    var page = ViewBag.page;
+}
+
+<h2>ShowProduct_9</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div class="container">
+    <!--Dòng 1-->
+    <div row>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <div style="height:100px;" class="Noi_Dung">
+                <b>Nội dung</b>
+            </div>
+
+            <div class="Dap_An_A" style="height:100px;">
+                <input id="A" type="button" value="A" name="A" onclick="ChonA()" />
+            </div>
+
+            <div class="Dap_An_B" style="height:100px;">
+                <input id="B" type="button" value="B" name="B" onclick="ChonB()" />
+            </div>
+            <div class="Dap_An_C" style="height:100px;">
+                <input id="C" type="button" value="C" name="C" onclick="ChonC()" />
+            </div>
+            <div class="Dap_An_D" style="height:100px;">
+                <input id=D type="button" value="D" name="D" onclick="ChonD()" />
+            </div>
+            <div style="height:100px;" class="Noi_Dung">
+                <b>Bộ câu hỏi</b>
+            </div>
+        </div>
+        <div class="col-sx-10 col-sm-10 col-md-10 col-lg-10">
+            @foreach (var item in Model)
+            {
+                <form>
+                    <textarea>@Html.DisplayFor(modelItem => item.Noi_Dung)</textarea>
+                    <hr />
+                    <input class="input " id="input_1" name="Dap_An_A" type="text" value="@Html.DisplayFor(modelItem => item.Dap_An_A)" />
+                    <hr />
+                    <input class="input" id="input_2" Name="Dap_An_B" type="text" value="@Html.DisplayFor(modelItem => item.Dap_An_B)" />
+                    <hr />
+                    <input class="input" id="input_3" Name="Dap_An_C" type="text" value="@Html.DisplayFor(modelItem => item.Dap_An_C)" />
+                    <hr />
+                    <input class="input" id="input_4" Name="Dap_An_D" type="text" value="@Html.DisplayFor(modelItem => item.Dap_An_D)" />
+                    <hr />
+                    <input style="display:none" class="input" id="Dap_An_Dung" name="Dap_An_Dung" type="text" value="@Html.DisplayFor(modelItem =>item.Dap_An_Dung)" />
+
+                    <img src="@Url.Content("~/Content/images/")@item.bo_cau_hoi.Picture" />
+                    <hr />
+                </form>
+            }
+            @*Tạo trang*@
+            <h3>Câu hỏi : </h3>
+            @for (int i = 0; i < CountProducts; i++)
+            {
+                if (i + 1 == page)
+                {
+                    @Html.DisplayName(" " + (i + 1).ToString() + " ");
+                }
+                else
+                {
+                    @Html.ActionLink("[" + (i + 1).ToString() + "]", "ShowProduct_9", new { page = i + 1 });
+                }
+
+            }
+        </div>
+    </div>
+    <!--dòng 2-->
+</div>
+<input type="button" value="Đáp án " name="KQ" class="Dap_An" id="Dap_An" onclick="Dap_An_Dung()" />
+
+@*Xử lý sự kiện*@
+<script>
+    @*Hàm xử lý nút đáp án đúng*@
+    function Dap_An_Dung()
+    {
+        if ((document.getElementById("Dap_An_Dung").value) == (document.getElementById("A").value))
+        {
+            document.getElementById("input_1").style.background = "red";
+        }
+        else if ((document.getElementById("Dap_An_Dung").value) == (document.getElementById("B").value)) {
+            document.getElementById("input_2").style.background = "red";
+        }
+        else if ((document.getElementById("Dap_An_Dung").value) == (document.getElementById("C").value)) {
+            document.getElementById("input_3").style.background = "red";
+        }
+        else {
+            document.getElementById("input_4").style.background = "red";
+        }
+    }
+    @*hàm xử lý thời gian*@
+
+   @*Hàm xử lý nút chọn đáp án A,b,c,d*@
+    function ChonA()
+    {
+        var A = document.getElementById("input_1");
+        A.style.background = "blue";
+        var B = document.getElementById("input_2");
+        B.style.background = "white";
+        var C = document.getElementById("input_3");
+        C.style.background = "white";
+        var D = document.getElementById("input_4");
+        D.style.background = "white";
+
+    }
+
+    function ChonB() {
+        var A = document.getElementById("input_2");
+        A.style.background = "blue";
+        var B = document.getElementById("input_1");
+        B.style.background = "white";
+        var C = document.getElementById("input_3");
+        C.style.background = "white";
+        var D = document.getElementById("input_4");
+        D.style.background = "white";
+    }
+    function ChonC() {
+        var A = document.getElementById("input_3");
+        A.style.background = "blue";
+        var B = document.getElementById("input_1");
+        B.style.background = "white";
+        var C = document.getElementById("input_2");
+        C.style.background = "white";
+        var D = document.getElementById("input_4");
+        D.style.background = "white";
+    }
+    function ChonD() {
+        var A = document.getElementById("input_4");
+        A.style.background = "blue";
+        var B = document.getElementById("input_1");
+        B.style.background = "white";
+        var C = document.getElementById("input_3");
+        C.style.background = "white";
+        var D = document.getElementById("input_2");
+        D.style.background = "white";
+    }
+</script>

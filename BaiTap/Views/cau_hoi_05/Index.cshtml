@@ -1,0 +1,69 @@
+﻿@model IEnumerable<BaiTap.Models.cau_hoi_05>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Noi_Dung)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dap_An_A)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dap_An_B)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dap_An_C)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dap_An_D)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dap_An_Dung)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bo_cau_hoi.Picture)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Noi_Dung)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dap_An_A)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dap_An_B)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dap_An_C)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dap_An_D)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dap_An_Dung)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bo_cau_hoi.Picture)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Ma_cau_hoi }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Ma_cau_hoi }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Ma_cau_hoi })
+        </td>
+    </tr>
+}
+
+</table>

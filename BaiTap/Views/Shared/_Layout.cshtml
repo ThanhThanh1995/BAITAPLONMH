@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Bộ câu hỏi", "Index", "bo_cau_hoi", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <br />
+        <input type="button" value="TimeStart" name="Start" class="Start" id="Start" onclick="start()" />
+        <input type="button" value="TimeStop" name="Stop" class="Stop" id="Stop" onclick="stop()" />
+
+        <input style="display:none;" type="text" value="0" name="hours" class="hours" id="hours" />
+        <input style="display:none;" type="text" value="0" name="minutes" class="minutes" id="minutes" />
+        <input style="display:none;" type="text" value="10" name="seconds" class="seconds" id="seconds" />
+
+        <div>
+            <span id="h">Giờ</span> :
+            <span id="m">Phút</span> :
+            <span id="s">Giây</span>
+        </div>
+       
+        <script>
+            var h = null; // Giờ
+            var m = null; // Phút
+            var s = null; // Giây
+
+            var timeout = null; // Timeout
+
+            function start() {
+                /*BƯỚC 1: LẤY GIÁ TRỊ BAN ĐẦU*/
+                if (h === null) {
+                    h = parseInt(document.getElementById('hours').value);
+                    m = parseInt(document.getElementById('minutes').value);
+                    s = parseInt(document.getElementById('seconds').value);
+                }
+
+                /*BƯỚC 1: CHUYỂN ĐỔI DỮ LIỆU*/
+                // Nếu số giây = -1 tức là đã chạy ngược hết số giây, lúc này:
+                //  - giảm số phút xuống 1 đơn vị
+                //  - thiết lập số giây lại 59
+                if (s === -1) {
+                    m -= 1;
+                    s = 59;
+                }
+
+                // Nếu số phút = -1 tức là đã chạy ngược hết số phút, lúc này:
+                //  - giảm số giờ xuống 1 đơn vị
+                //  - thiết lập số phút lại 59
+                if (m === -1) {
+                    h -= 1;
+                    m = 59;
+                }
+
+                // Nếu số giờ = -1 tức là đã hết giờ, lúc này:
+                //  - Dừng chương trình
+                if (h == -1) {
+                    clearTimeout(timeout);
+                    alert('Hết giờ');
+                    return false;
+                }
+
+                /*BƯỚC 1: HIỂN THỊ ĐỒNG HỒ*/
+                document.getElementById('h').innerText = h.toString();
+                document.getElementById('m').innerText = m.toString();
+                document.getElementById('s').innerText = s.toString();
+
+                /*BƯỚC 1: GIẢM PHÚT XUỐNG 1 GIÂY VÀ GỌI LẠI SAU 1 GIÂY */
+                timeout = setTimeout(function () {
+                    s--;
+                    start();
+                }, 1000);
+            }
+
+            function stop() {
+                clearTimeout(timeout);
+            }
+        </script>
+        <hr />
+
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

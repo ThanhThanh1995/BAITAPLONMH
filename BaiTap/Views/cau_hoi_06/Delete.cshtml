@@ -1,0 +1,80 @@
+﻿@model BaiTap.Models.cau_hoi_06
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>cau_hoi_06</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Noi_Dung)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Noi_Dung)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dap_An_A)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dap_An_A)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dap_An_B)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dap_An_B)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dap_An_C)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dap_An_C)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dap_An_D)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dap_An_D)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dap_An_Dung)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dap_An_Dung)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bo_cau_hoi.Picture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bo_cau_hoi.Picture)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

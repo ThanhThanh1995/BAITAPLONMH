@@ -1,0 +1,51 @@
+﻿@model IEnumerable<BaiTap.Models.bo_cau_hoi>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<h2 style="color:red;"><b>Danh sách bộ câu hỏi</b></h2>
+<style>
+    a
+    {
+        text-decoration:none;
+        color:black;
+    }
+</style>
+<p>
+    @Html.ActionLink("Thêm mới", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Picture)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td style="width:30%">
+            <a href=""><img src="@Url.Content("~/Content/images/")@item.Picture" /></a>           
+        </td>
+        <td>
+            @Html.ActionLink("Chọn bộ 1", "ShowProduct","cau_hoi_01") |
+            @Html.ActionLink("Chọn bộ 2", "ShowProduct_2", "cau_hoi_02") |
+            @Html.ActionLink("Chọn bộ 3", "ShowProduct_3", "cau_hoi_03") |
+            @Html.ActionLink("Chọn bộ 4", "ShowProduct_4", "cau_hoi_04") |
+            @Html.ActionLink("Chọn bộ 5", "ShowProduct_5", "cau_hoi_05") |
+            @Html.ActionLink("Chọn bộ 6", "ShowProduct_6", "cau_hoi_06") |
+            @Html.ActionLink("Chọn bộ 7", "ShowProduct_7", "cau_hoi_07") |
+            @Html.ActionLink("Chọn bộ 8", "ShowProduct_8", "cau_hoi_08") |
+            @Html.ActionLink("Chọn bộ 9", "ShowProduct_9", "cau_hoi_09") |
+            @Html.ActionLink("Chọn bộ 10", "ShowProduct_10", "cau_hoi_10") |
+            @Html.ActionLink("Edit", "Edit", new { id=item.Ma_bo_cau_hoi}) |
+            @Html.ActionLink("Details", "Details", new { id=item.Ma_bo_cau_hoi }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Ma_bo_cau_hoi })
+        </td>
+    </tr>
+}
+
+</table>

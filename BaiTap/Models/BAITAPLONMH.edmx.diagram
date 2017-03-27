@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d4e5d04f052b4d938fa080abcd8dea98" Name="Diagram1">
+        <EntityTypeShape EntityType="baitaplonmhModel.bo_cau_hoi" Width="1.5" PointX="0.75" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="baitaplonmhModel.cau_hoi_01" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="baitaplonmhModel.cau_hoi_02" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="baitaplonmhModel.cau_hoi_03" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="baitaplonmhModel.cau_hoi_04" Width="1.5" PointX="3" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="baitaplonmhModel.cau_hoi_05" Width="1.5" PointX="3" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="baitaplonmhModel.cau_hoi_06" Width="1.5" PointX="3" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="baitaplonmhModel.cau_hoi_07" Width="1.5" PointX="3" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="baitaplonmhModel.cau_hoi_08" Width="1.5" PointX="3" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="baitaplonmhModel.cau_hoi_09" Width="1.5" PointX="3" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="baitaplonmhModel.cau_hoi_10" Width="1.5" PointX="3" PointY="34" IsExpanded="true" />
+        <AssociationConnector Association="baitaplonmhModel.FK__cau_hoi__Ma_bo_c__1273C1CD" ManuallyRouted="false" />
+        <AssociationConnector Association="baitaplonmhModel.FK__cau_hoi_1__Ma_bo__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="baitaplonmhModel.FK__cau_hoi_2__Ma_bo__15502E78" ManuallyRouted="false" />
+        <AssociationConnector Association="baitaplonmhModel.FK__cau_hoi_3__Ma_bo__182C9B23" ManuallyRouted="false" />
+        <AssociationConnector Association="baitaplonmhModel.FK__cau_hoi_4__Ma_bo__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="baitaplonmhModel.FK__cau_hoi_5__Ma_bo__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="baitaplonmhModel.FK__cau_hoi_6__Ma_bo__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="baitaplonmhModel.FK__cau_hoi_7__Ma_bo__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="baitaplonmhModel.FK__cau_hoi_8__Ma_bo__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="baitaplonmhModel.FK__cau_hoi_9__Ma_bo__5535A963" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

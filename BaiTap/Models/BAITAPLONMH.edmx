@@ -1,0 +1,830 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="baitaplonmhModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="bo_cau_hoi">
+          <Key>
+            <PropertyRef Name="Ma_bo_cau_hoi" />
+          </Key>
+          <Property Name="Ma_bo_cau_hoi" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="Picture" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cau_hoi_01">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="Noi_Dung" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_A" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_B" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_C" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_D" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="char" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cau_hoi_02">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="Noi_Dung" Type="nvarchar" MaxLength="4000" />
+          <Property Name="Dap_An_A" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_B" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_C" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_D" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="char" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cau_hoi_03">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="Noi_Dung" Type="nvarchar" MaxLength="4000" />
+          <Property Name="Dap_An_A" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_B" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_C" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_D" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="char" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cau_hoi_04">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="char" MaxLength="10" />
+          <Property Name="Noi_Dung" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_A" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_B" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_C" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_D" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="char" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cau_hoi_05">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="char" MaxLength="10" />
+          <Property Name="Noi_Dung" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_A" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_B" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_C" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_D" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="char" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cau_hoi_06">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="char" MaxLength="10" />
+          <Property Name="Noi_Dung" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_A" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_B" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_C" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_D" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="char" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cau_hoi_07">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="char" MaxLength="10" />
+          <Property Name="Noi_Dung" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_A" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_B" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_C" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_D" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="char" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cau_hoi_08">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="char" MaxLength="10" />
+          <Property Name="Noi_Dung" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_A" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_B" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_C" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_D" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="char" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cau_hoi_09">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="char" MaxLength="10" />
+          <Property Name="Noi_Dung" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_A" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_B" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_C" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_D" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="char" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <EntityType Name="cau_hoi_10">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="char" MaxLength="10" />
+          <Property Name="Noi_Dung" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_A" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_B" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_C" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_D" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="char" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__cau_hoi__Ma_bo_c__1273C1CD">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="1" />
+          <End Role="cau_hoi_01" Type="Self.cau_hoi_01" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_01">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cau_hoi_1__Ma_bo__5812160E">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="0..1" />
+          <End Role="cau_hoi_10" Type="Self.cau_hoi_10" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_10">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cau_hoi_2__Ma_bo__15502E78">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="1" />
+          <End Role="cau_hoi_02" Type="Self.cau_hoi_02" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_02">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cau_hoi_3__Ma_bo__182C9B23">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="1" />
+          <End Role="cau_hoi_03" Type="Self.cau_hoi_03" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_03">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cau_hoi_4__Ma_bo__36B12243">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="0..1" />
+          <End Role="cau_hoi_04" Type="Self.cau_hoi_04" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_04">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cau_hoi_5__Ma_bo__49C3F6B7">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="0..1" />
+          <End Role="cau_hoi_05" Type="Self.cau_hoi_05" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_05">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cau_hoi_6__Ma_bo__4CA06362">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="0..1" />
+          <End Role="cau_hoi_06" Type="Self.cau_hoi_06" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_06">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cau_hoi_7__Ma_bo__4F7CD00D">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="0..1" />
+          <End Role="cau_hoi_07" Type="Self.cau_hoi_07" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_07">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cau_hoi_8__Ma_bo__52593CB8">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="0..1" />
+          <End Role="cau_hoi_08" Type="Self.cau_hoi_08" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_08">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cau_hoi_9__Ma_bo__5535A963">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="0..1" />
+          <End Role="cau_hoi_09" Type="Self.cau_hoi_09" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_09">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="baitaplonmhModelStoreContainer">
+          <EntitySet Name="bo_cau_hoi" EntityType="Self.bo_cau_hoi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="cau_hoi_01" EntityType="Self.cau_hoi_01" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="cau_hoi_02" EntityType="Self.cau_hoi_02" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="cau_hoi_03" EntityType="Self.cau_hoi_03" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="cau_hoi_04" EntityType="Self.cau_hoi_04" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="cau_hoi_05" EntityType="Self.cau_hoi_05" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="cau_hoi_06" EntityType="Self.cau_hoi_06" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="cau_hoi_07" EntityType="Self.cau_hoi_07" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="cau_hoi_08" EntityType="Self.cau_hoi_08" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="cau_hoi_09" EntityType="Self.cau_hoi_09" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="cau_hoi_10" EntityType="Self.cau_hoi_10" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__cau_hoi__Ma_bo_c__1273C1CD" Association="Self.FK__cau_hoi__Ma_bo_c__1273C1CD">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_01" EntitySet="cau_hoi_01" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cau_hoi_1__Ma_bo__5812160E" Association="Self.FK__cau_hoi_1__Ma_bo__5812160E">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_10" EntitySet="cau_hoi_10" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cau_hoi_2__Ma_bo__15502E78" Association="Self.FK__cau_hoi_2__Ma_bo__15502E78">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_02" EntitySet="cau_hoi_02" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cau_hoi_3__Ma_bo__182C9B23" Association="Self.FK__cau_hoi_3__Ma_bo__182C9B23">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_03" EntitySet="cau_hoi_03" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cau_hoi_4__Ma_bo__36B12243" Association="Self.FK__cau_hoi_4__Ma_bo__36B12243">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_04" EntitySet="cau_hoi_04" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cau_hoi_5__Ma_bo__49C3F6B7" Association="Self.FK__cau_hoi_5__Ma_bo__49C3F6B7">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_05" EntitySet="cau_hoi_05" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cau_hoi_6__Ma_bo__4CA06362" Association="Self.FK__cau_hoi_6__Ma_bo__4CA06362">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_06" EntitySet="cau_hoi_06" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cau_hoi_7__Ma_bo__4F7CD00D" Association="Self.FK__cau_hoi_7__Ma_bo__4F7CD00D">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_07" EntitySet="cau_hoi_07" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cau_hoi_8__Ma_bo__52593CB8" Association="Self.FK__cau_hoi_8__Ma_bo__52593CB8">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_08" EntitySet="cau_hoi_08" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cau_hoi_9__Ma_bo__5535A963" Association="Self.FK__cau_hoi_9__Ma_bo__5535A963">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_09" EntitySet="cau_hoi_09" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="baitaplonmhModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="bo_cau_hoi">
+          <Key>
+            <PropertyRef Name="Ma_bo_cau_hoi" />
+          </Key>
+          <Property Name="Ma_bo_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Picture" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="cau_hoi_01" Relationship="Self.FK__cau_hoi__Ma_bo_c__1273C1CD" FromRole="bo_cau_hoi" ToRole="cau_hoi_01" />
+          <NavigationProperty Name="cau_hoi_10" Relationship="Self.FK__cau_hoi_1__Ma_bo__5812160E" FromRole="bo_cau_hoi" ToRole="cau_hoi_10" />
+          <NavigationProperty Name="cau_hoi_02" Relationship="Self.FK__cau_hoi_2__Ma_bo__15502E78" FromRole="bo_cau_hoi" ToRole="cau_hoi_02" />
+          <NavigationProperty Name="cau_hoi_03" Relationship="Self.FK__cau_hoi_3__Ma_bo__182C9B23" FromRole="bo_cau_hoi" ToRole="cau_hoi_03" />
+          <NavigationProperty Name="cau_hoi_04" Relationship="Self.FK__cau_hoi_4__Ma_bo__36B12243" FromRole="bo_cau_hoi" ToRole="cau_hoi_04" />
+          <NavigationProperty Name="cau_hoi_05" Relationship="Self.FK__cau_hoi_5__Ma_bo__49C3F6B7" FromRole="bo_cau_hoi" ToRole="cau_hoi_05" />
+          <NavigationProperty Name="cau_hoi_06" Relationship="Self.FK__cau_hoi_6__Ma_bo__4CA06362" FromRole="bo_cau_hoi" ToRole="cau_hoi_06" />
+          <NavigationProperty Name="cau_hoi_07" Relationship="Self.FK__cau_hoi_7__Ma_bo__4F7CD00D" FromRole="bo_cau_hoi" ToRole="cau_hoi_07" />
+          <NavigationProperty Name="cau_hoi_08" Relationship="Self.FK__cau_hoi_8__Ma_bo__52593CB8" FromRole="bo_cau_hoi" ToRole="cau_hoi_08" />
+          <NavigationProperty Name="cau_hoi_09" Relationship="Self.FK__cau_hoi_9__Ma_bo__5535A963" FromRole="bo_cau_hoi" ToRole="cau_hoi_09" />
+        </EntityType>
+        <EntityType Name="cau_hoi_01">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Noi_Dung" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_A" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_B" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_C" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_D" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="bo_cau_hoi" Relationship="Self.FK__cau_hoi__Ma_bo_c__1273C1CD" FromRole="cau_hoi_01" ToRole="bo_cau_hoi" />
+        </EntityType>
+        <EntityType Name="cau_hoi_02">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Noi_Dung" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="Dap_An_A" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_B" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_C" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_D" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="bo_cau_hoi" Relationship="Self.FK__cau_hoi_2__Ma_bo__15502E78" FromRole="cau_hoi_02" ToRole="bo_cau_hoi" />
+        </EntityType>
+        <EntityType Name="cau_hoi_03">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Noi_Dung" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="Dap_An_A" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_B" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_C" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_D" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="bo_cau_hoi" Relationship="Self.FK__cau_hoi_3__Ma_bo__182C9B23" FromRole="cau_hoi_03" ToRole="bo_cau_hoi" />
+        </EntityType>
+        <EntityType Name="cau_hoi_04">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="Noi_Dung" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_A" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_B" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_C" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_D" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="bo_cau_hoi" Relationship="Self.FK__cau_hoi_4__Ma_bo__36B12243" FromRole="cau_hoi_04" ToRole="bo_cau_hoi" />
+        </EntityType>
+        <EntityType Name="cau_hoi_05">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="Noi_Dung" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_A" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_B" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_C" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_D" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="bo_cau_hoi" Relationship="Self.FK__cau_hoi_5__Ma_bo__49C3F6B7" FromRole="cau_hoi_05" ToRole="bo_cau_hoi" />
+        </EntityType>
+        <EntityType Name="cau_hoi_06">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="Noi_Dung" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_A" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_B" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_C" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_D" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="bo_cau_hoi" Relationship="Self.FK__cau_hoi_6__Ma_bo__4CA06362" FromRole="cau_hoi_06" ToRole="bo_cau_hoi" />
+        </EntityType>
+        <EntityType Name="cau_hoi_07">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="Noi_Dung" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_A" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_B" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_C" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_D" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="bo_cau_hoi" Relationship="Self.FK__cau_hoi_7__Ma_bo__4F7CD00D" FromRole="cau_hoi_07" ToRole="bo_cau_hoi" />
+        </EntityType>
+        <EntityType Name="cau_hoi_08">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="Noi_Dung" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_A" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_B" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_C" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_D" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="bo_cau_hoi" Relationship="Self.FK__cau_hoi_8__Ma_bo__52593CB8" FromRole="cau_hoi_08" ToRole="bo_cau_hoi" />
+        </EntityType>
+        <EntityType Name="cau_hoi_09">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="Noi_Dung" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_A" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_B" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_C" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_D" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="bo_cau_hoi" Relationship="Self.FK__cau_hoi_9__Ma_bo__5535A963" FromRole="cau_hoi_09" ToRole="bo_cau_hoi" />
+        </EntityType>
+        <EntityType Name="cau_hoi_10">
+          <Key>
+            <PropertyRef Name="Ma_cau_hoi" />
+          </Key>
+          <Property Name="Ma_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Ma_bo_cau_hoi" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="Noi_Dung" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_A" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_B" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_C" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_D" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Dap_An_Dung" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="bo_cau_hoi" Relationship="Self.FK__cau_hoi_1__Ma_bo__5812160E" FromRole="cau_hoi_10" ToRole="bo_cau_hoi" />
+        </EntityType>
+        <Association Name="FK__cau_hoi__Ma_bo_c__1273C1CD">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="1" />
+          <End Role="cau_hoi_01" Type="Self.cau_hoi_01" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_01">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cau_hoi_1__Ma_bo__5812160E">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="0..1" />
+          <End Role="cau_hoi_10" Type="Self.cau_hoi_10" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_10">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cau_hoi_2__Ma_bo__15502E78">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="1" />
+          <End Role="cau_hoi_02" Type="Self.cau_hoi_02" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_02">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cau_hoi_3__Ma_bo__182C9B23">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="1" />
+          <End Role="cau_hoi_03" Type="Self.cau_hoi_03" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_03">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cau_hoi_4__Ma_bo__36B12243">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="0..1" />
+          <End Role="cau_hoi_04" Type="Self.cau_hoi_04" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_04">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cau_hoi_5__Ma_bo__49C3F6B7">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="0..1" />
+          <End Role="cau_hoi_05" Type="Self.cau_hoi_05" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_05">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cau_hoi_6__Ma_bo__4CA06362">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="0..1" />
+          <End Role="cau_hoi_06" Type="Self.cau_hoi_06" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_06">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cau_hoi_7__Ma_bo__4F7CD00D">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="0..1" />
+          <End Role="cau_hoi_07" Type="Self.cau_hoi_07" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_07">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cau_hoi_8__Ma_bo__52593CB8">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="0..1" />
+          <End Role="cau_hoi_08" Type="Self.cau_hoi_08" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_08">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cau_hoi_9__Ma_bo__5535A963">
+          <End Role="bo_cau_hoi" Type="Self.bo_cau_hoi" Multiplicity="0..1" />
+          <End Role="cau_hoi_09" Type="Self.cau_hoi_09" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="bo_cau_hoi">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Principal>
+            <Dependent Role="cau_hoi_09">
+              <PropertyRef Name="Ma_bo_cau_hoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="baitaplonmhEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="bo_cau_hoi" EntityType="Self.bo_cau_hoi" />
+          <EntitySet Name="cau_hoi_01" EntityType="Self.cau_hoi_01" />
+          <EntitySet Name="cau_hoi_02" EntityType="Self.cau_hoi_02" />
+          <EntitySet Name="cau_hoi_03" EntityType="Self.cau_hoi_03" />
+          <EntitySet Name="cau_hoi_04" EntityType="Self.cau_hoi_04" />
+          <EntitySet Name="cau_hoi_05" EntityType="Self.cau_hoi_05" />
+          <EntitySet Name="cau_hoi_06" EntityType="Self.cau_hoi_06" />
+          <EntitySet Name="cau_hoi_07" EntityType="Self.cau_hoi_07" />
+          <EntitySet Name="cau_hoi_08" EntityType="Self.cau_hoi_08" />
+          <EntitySet Name="cau_hoi_09" EntityType="Self.cau_hoi_09" />
+          <EntitySet Name="cau_hoi_10" EntityType="Self.cau_hoi_10" />
+          <AssociationSet Name="FK__cau_hoi__Ma_bo_c__1273C1CD" Association="Self.FK__cau_hoi__Ma_bo_c__1273C1CD">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_01" EntitySet="cau_hoi_01" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cau_hoi_1__Ma_bo__5812160E" Association="Self.FK__cau_hoi_1__Ma_bo__5812160E">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_10" EntitySet="cau_hoi_10" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cau_hoi_2__Ma_bo__15502E78" Association="Self.FK__cau_hoi_2__Ma_bo__15502E78">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_02" EntitySet="cau_hoi_02" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cau_hoi_3__Ma_bo__182C9B23" Association="Self.FK__cau_hoi_3__Ma_bo__182C9B23">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_03" EntitySet="cau_hoi_03" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cau_hoi_4__Ma_bo__36B12243" Association="Self.FK__cau_hoi_4__Ma_bo__36B12243">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_04" EntitySet="cau_hoi_04" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cau_hoi_5__Ma_bo__49C3F6B7" Association="Self.FK__cau_hoi_5__Ma_bo__49C3F6B7">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_05" EntitySet="cau_hoi_05" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cau_hoi_6__Ma_bo__4CA06362" Association="Self.FK__cau_hoi_6__Ma_bo__4CA06362">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_06" EntitySet="cau_hoi_06" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cau_hoi_7__Ma_bo__4F7CD00D" Association="Self.FK__cau_hoi_7__Ma_bo__4F7CD00D">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_07" EntitySet="cau_hoi_07" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cau_hoi_8__Ma_bo__52593CB8" Association="Self.FK__cau_hoi_8__Ma_bo__52593CB8">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_08" EntitySet="cau_hoi_08" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cau_hoi_9__Ma_bo__5535A963" Association="Self.FK__cau_hoi_9__Ma_bo__5535A963">
+            <End Role="bo_cau_hoi" EntitySet="bo_cau_hoi" />
+            <End Role="cau_hoi_09" EntitySet="cau_hoi_09" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="baitaplonmhModelStoreContainer" CdmEntityContainer="baitaplonmhEntities">
+          <EntitySetMapping Name="bo_cau_hoi">
+            <EntityTypeMapping TypeName="baitaplonmhModel.bo_cau_hoi">
+              <MappingFragment StoreEntitySet="bo_cau_hoi">
+                <ScalarProperty Name="Ma_bo_cau_hoi" ColumnName="Ma_bo_cau_hoi" />
+                <ScalarProperty Name="Picture" ColumnName="Picture" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cau_hoi_01">
+            <EntityTypeMapping TypeName="baitaplonmhModel.cau_hoi_01">
+              <MappingFragment StoreEntitySet="cau_hoi_01">
+                <ScalarProperty Name="Ma_cau_hoi" ColumnName="Ma_cau_hoi" />
+                <ScalarProperty Name="Ma_bo_cau_hoi" ColumnName="Ma_bo_cau_hoi" />
+                <ScalarProperty Name="Noi_Dung" ColumnName="Noi_Dung" />
+                <ScalarProperty Name="Dap_An_A" ColumnName="Dap_An_A" />
+                <ScalarProperty Name="Dap_An_B" ColumnName="Dap_An_B" />
+                <ScalarProperty Name="Dap_An_C" ColumnName="Dap_An_C" />
+                <ScalarProperty Name="Dap_An_D" ColumnName="Dap_An_D" />
+                <ScalarProperty Name="Dap_An_Dung" ColumnName="Dap_An_Dung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cau_hoi_02">
+            <EntityTypeMapping TypeName="baitaplonmhModel.cau_hoi_02">
+              <MappingFragment StoreEntitySet="cau_hoi_02">
+                <ScalarProperty Name="Ma_cau_hoi" ColumnName="Ma_cau_hoi" />
+                <ScalarProperty Name="Ma_bo_cau_hoi" ColumnName="Ma_bo_cau_hoi" />
+                <ScalarProperty Name="Noi_Dung" ColumnName="Noi_Dung" />
+                <ScalarProperty Name="Dap_An_A" ColumnName="Dap_An_A" />
+                <ScalarProperty Name="Dap_An_B" ColumnName="Dap_An_B" />
+                <ScalarProperty Name="Dap_An_C" ColumnName="Dap_An_C" />
+                <ScalarProperty Name="Dap_An_D" ColumnName="Dap_An_D" />
+                <ScalarProperty Name="Dap_An_Dung" ColumnName="Dap_An_Dung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cau_hoi_03">
+            <EntityTypeMapping TypeName="baitaplonmhModel.cau_hoi_03">
+              <MappingFragment StoreEntitySet="cau_hoi_03">
+                <ScalarProperty Name="Ma_cau_hoi" ColumnName="Ma_cau_hoi" />
+                <ScalarProperty Name="Ma_bo_cau_hoi" ColumnName="Ma_bo_cau_hoi" />
+                <ScalarProperty Name="Noi_Dung" ColumnName="Noi_Dung" />
+                <ScalarProperty Name="Dap_An_A" ColumnName="Dap_An_A" />
+                <ScalarProperty Name="Dap_An_B" ColumnName="Dap_An_B" />
+                <ScalarProperty Name="Dap_An_C" ColumnName="Dap_An_C" />
+                <ScalarProperty Name="Dap_An_D" ColumnName="Dap_An_D" />
+                <ScalarProperty Name="Dap_An_Dung" ColumnName="Dap_An_Dung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cau_hoi_04">
+            <EntityTypeMapping TypeName="baitaplonmhModel.cau_hoi_04">
+              <MappingFragment StoreEntitySet="cau_hoi_04">
+                <ScalarProperty Name="Ma_cau_hoi" ColumnName="Ma_cau_hoi" />
+                <ScalarProperty Name="Ma_bo_cau_hoi" ColumnName="Ma_bo_cau_hoi" />
+                <ScalarProperty Name="Noi_Dung" ColumnName="Noi_Dung" />
+                <ScalarProperty Name="Dap_An_A" ColumnName="Dap_An_A" />
+                <ScalarProperty Name="Dap_An_B" ColumnName="Dap_An_B" />
+                <ScalarProperty Name="Dap_An_C" ColumnName="Dap_An_C" />
+                <ScalarProperty Name="Dap_An_D" ColumnName="Dap_An_D" />
+                <ScalarProperty Name="Dap_An_Dung" ColumnName="Dap_An_Dung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cau_hoi_05">
+            <EntityTypeMapping TypeName="baitaplonmhModel.cau_hoi_05">
+              <MappingFragment StoreEntitySet="cau_hoi_05">
+                <ScalarProperty Name="Ma_cau_hoi" ColumnName="Ma_cau_hoi" />
+                <ScalarProperty Name="Ma_bo_cau_hoi" ColumnName="Ma_bo_cau_hoi" />
+                <ScalarProperty Name="Noi_Dung" ColumnName="Noi_Dung" />
+                <ScalarProperty Name="Dap_An_A" ColumnName="Dap_An_A" />
+                <ScalarProperty Name="Dap_An_B" ColumnName="Dap_An_B" />
+                <ScalarProperty Name="Dap_An_C" ColumnName="Dap_An_C" />
+                <ScalarProperty Name="Dap_An_D" ColumnName="Dap_An_D" />
+                <ScalarProperty Name="Dap_An_Dung" ColumnName="Dap_An_Dung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cau_hoi_06">
+            <EntityTypeMapping TypeName="baitaplonmhModel.cau_hoi_06">
+              <MappingFragment StoreEntitySet="cau_hoi_06">
+                <ScalarProperty Name="Ma_cau_hoi" ColumnName="Ma_cau_hoi" />
+                <ScalarProperty Name="Ma_bo_cau_hoi" ColumnName="Ma_bo_cau_hoi" />
+                <ScalarProperty Name="Noi_Dung" ColumnName="Noi_Dung" />
+                <ScalarProperty Name="Dap_An_A" ColumnName="Dap_An_A" />
+                <ScalarProperty Name="Dap_An_B" ColumnName="Dap_An_B" />
+                <ScalarProperty Name="Dap_An_C" ColumnName="Dap_An_C" />
+                <ScalarProperty Name="Dap_An_D" ColumnName="Dap_An_D" />
+                <ScalarProperty Name="Dap_An_Dung" ColumnName="Dap_An_Dung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cau_hoi_07">
+            <EntityTypeMapping TypeName="baitaplonmhModel.cau_hoi_07">
+              <MappingFragment StoreEntitySet="cau_hoi_07">
+                <ScalarProperty Name="Ma_cau_hoi" ColumnName="Ma_cau_hoi" />
+                <ScalarProperty Name="Ma_bo_cau_hoi" ColumnName="Ma_bo_cau_hoi" />
+                <ScalarProperty Name="Noi_Dung" ColumnName="Noi_Dung" />
+                <ScalarProperty Name="Dap_An_A" ColumnName="Dap_An_A" />
+                <ScalarProperty Name="Dap_An_B" ColumnName="Dap_An_B" />
+                <ScalarProperty Name="Dap_An_C" ColumnName="Dap_An_C" />
+                <ScalarProperty Name="Dap_An_D" ColumnName="Dap_An_D" />
+                <ScalarProperty Name="Dap_An_Dung" ColumnName="Dap_An_Dung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cau_hoi_08">
+            <EntityTypeMapping TypeName="baitaplonmhModel.cau_hoi_08">
+              <MappingFragment StoreEntitySet="cau_hoi_08">
+                <ScalarProperty Name="Ma_cau_hoi" ColumnName="Ma_cau_hoi" />
+                <ScalarProperty Name="Ma_bo_cau_hoi" ColumnName="Ma_bo_cau_hoi" />
+                <ScalarProperty Name="Noi_Dung" ColumnName="Noi_Dung" />
+                <ScalarProperty Name="Dap_An_A" ColumnName="Dap_An_A" />
+                <ScalarProperty Name="Dap_An_B" ColumnName="Dap_An_B" />
+                <ScalarProperty Name="Dap_An_C" ColumnName="Dap_An_C" />
+                <ScalarProperty Name="Dap_An_D" ColumnName="Dap_An_D" />
+                <ScalarProperty Name="Dap_An_Dung" ColumnName="Dap_An_Dung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cau_hoi_09">
+            <EntityTypeMapping TypeName="baitaplonmhModel.cau_hoi_09">
+              <MappingFragment StoreEntitySet="cau_hoi_09">
+                <ScalarProperty Name="Ma_cau_hoi" ColumnName="Ma_cau_hoi" />
+                <ScalarProperty Name="Ma_bo_cau_hoi" ColumnName="Ma_bo_cau_hoi" />
+                <ScalarProperty Name="Noi_Dung" ColumnName="Noi_Dung" />
+                <ScalarProperty Name="Dap_An_A" ColumnName="Dap_An_A" />
+                <ScalarProperty Name="Dap_An_B" ColumnName="Dap_An_B" />
+                <ScalarProperty Name="Dap_An_C" ColumnName="Dap_An_C" />
+                <ScalarProperty Name="Dap_An_D" ColumnName="Dap_An_D" />
+                <ScalarProperty Name="Dap_An_Dung" ColumnName="Dap_An_Dung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cau_hoi_10">
+            <EntityTypeMapping TypeName="baitaplonmhModel.cau_hoi_10">
+              <MappingFragment StoreEntitySet="cau_hoi_10">
+                <ScalarProperty Name="Ma_cau_hoi" ColumnName="Ma_cau_hoi" />
+                <ScalarProperty Name="Ma_bo_cau_hoi" ColumnName="Ma_bo_cau_hoi" />
+                <ScalarProperty Name="Noi_Dung" ColumnName="Noi_Dung" />
+                <ScalarProperty Name="Dap_An_A" ColumnName="Dap_An_A" />
+                <ScalarProperty Name="Dap_An_B" ColumnName="Dap_An_B" />
+                <ScalarProperty Name="Dap_An_C" ColumnName="Dap_An_C" />
+                <ScalarProperty Name="Dap_An_D" ColumnName="Dap_An_D" />
+                <ScalarProperty Name="Dap_An_Dung" ColumnName="Dap_An_Dung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
